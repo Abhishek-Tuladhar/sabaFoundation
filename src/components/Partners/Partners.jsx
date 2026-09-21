@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { partners } from "@/app/lib/partners/partners";
+import { partners } from "@/lib/partners/partners";
 
 export default function Partners() {
   const doubled = [...partners, ...partners];

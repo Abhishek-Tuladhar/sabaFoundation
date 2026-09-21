@@ -173,26 +173,6 @@ export default function Hero() {
       />
 
       {/* =====================================================
-          HEADER
-      ===================================================== */}
-
-      <header className="relative z-20 mx-auto flex max-w-[1500px] items-center justify-between px-6 py-6 sm:px-10 lg:px-14">
-        {/* Brand */}
-        <a
-          href="/"
-          className="flex items-center gap-3"
-        >
-          <div className="flex h-9 w-9 items-center justify-center rounded-full border border-white/30 bg-black/20 text-[10px] font-medium backdrop-blur-md">
-            SF
-          </div>
-
-          <span className="hidden text-[10px] font-medium uppercase tracking-[0.22em] text-white/75 sm:block">
-            Saba Family Foundation
-          </span>
-        </a>
-      </header>
-
-      {/* =====================================================
           MAIN CONTENT
       ===================================================== */}
 

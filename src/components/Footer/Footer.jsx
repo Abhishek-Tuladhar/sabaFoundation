@@ -15,7 +15,7 @@ import {
 import {
   galleryImages,
   galleryVideos,
-} from "@/app/lib/gallery/gallery";
+} from "@/lib/gallery/gallery";
 
 gsap.registerPlugin(ScrollTrigger);
 

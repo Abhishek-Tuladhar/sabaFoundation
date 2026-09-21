@@ -41,3 +41,33 @@ body {
 .animate-marquee {
   animation: marquee 30s linear infinite;
 }
+
+.area-content p {
+  margin-bottom: 1.5rem;
+}
+
+.area-content p:last-child {
+  margin-bottom: 0;
+}
+
+.area-content ol {
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  list-style: decimal;
+}
+
+.area-content ul {
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.area-content li {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.area-content strong {
+  color: #f3ebdd;
+  font-weight: 600;
+}

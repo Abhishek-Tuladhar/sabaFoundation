@@ -3,7 +3,7 @@ import Impact from "@/components/Impact/Impact";
 import Programs from "@/components/Programs/Programs";
 import Partners from "@/components/Partners/Partners";
 import Testimonials from "@/components/Testimonials/Testimonials";
-import Footer from "@/components/Footer/Footer";
+import Gallery from "@/components/Gallery/Gallery";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Programs />
       <Partners />
       <Testimonials />
-      <Footer />
+      <Gallery />
     </main>
   );
 }

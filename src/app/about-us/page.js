@@ -10,9 +10,12 @@ import CompanyPartners from "@/components/About/CompanyPartners";
 import AboutCTA from "@/components/About/AboutCTA";
 
 export const metadata = {
-  title: "About Us | Saba Family Foundation",
+  title: "About Us",
   description:
-    "Learn about Saba Family Foundation, its mission, philosophy, global work, and commitment to improving lives around the world.",
+    "Learn about Saba Family Foundation, its mission, global initiatives, partnerships, and commitment to improving lives through education, healthcare, livelihoods, arts and culture, and human rights.",
+  alternates: {
+    canonical: "/about-us",
+  },
 };
 
 export default function AboutUsPage() {

@@ -469,8 +469,6 @@ export default function Programs() {
                 <Link
                   key={area.id}
                   href={`/areas/${area.slug}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className={`program-card group relative block min-h-[320px] overflow-hidden ${
                     layoutClasses[index] ?? "lg:col-span-4 min-h-[420px]"
                   }`}

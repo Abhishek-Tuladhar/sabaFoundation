@@ -225,7 +225,7 @@ export default function Header() {
               xl:px-5
             "
           >
-            <span>Let's Connect</span>
+            <span>Let&apos;s Connect</span>
 
             <span
               className="

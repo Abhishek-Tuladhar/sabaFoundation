@@ -30,7 +30,7 @@ export default function GlobalReach() {
             trigger: sectionRef.current,
             start: "top 70%",
           },
-        }
+        },
       );
     }, sectionRef);
 
@@ -59,9 +59,9 @@ export default function GlobalReach() {
 
           <div className="lg:pt-4">
             <p className="max-w-lg text-lg leading-8 text-black/60">
-              The foundation's work reaches communities across multiple
-              regions, connecting local initiatives with a broader commitment
-              to human development and opportunity.
+              The foundation&apos;s work reaches communities across multiple
+              regions, connecting local initiatives with a broader commitment to
+              human development and opportunity.
             </p>
           </div>
         </div>

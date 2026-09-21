@@ -292,7 +292,8 @@ export default function Gallery() {
           </h2>
 
           <p className="mb-8 text-sm leading-7 text-cream/40">
-            We couldn't load the latest photographs and films. Please try again.
+            We couldn&apos;t load the latest photographs and films. Please try
+            again.
           </p>
 
           <button

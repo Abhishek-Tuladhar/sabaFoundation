@@ -8,7 +8,7 @@ function stripHtml(html = "") {
 }
 
 function getExcerpt(description = "") {
-  const match = description.match(/<p>(.*?)<\/p>/i);
+  const match = description.match(/<p>(.*?)<\/p>/is);
 
   if (!match) {
     return stripHtml(description).slice(0, 180);

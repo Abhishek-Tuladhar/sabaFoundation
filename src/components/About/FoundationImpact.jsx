@@ -30,7 +30,7 @@ export default function FoundationImpact() {
             trigger: sectionRef.current,
             start: "top 72%",
           },
-        }
+        },
       );
     }, sectionRef);
 
@@ -55,7 +55,7 @@ export default function FoundationImpact() {
           </div>
 
           <p className="max-w-md text-sm leading-6 text-black/55">
-            A snapshot of the foundation's work and the communities reached
+            A snapshot of the foundation&apos;s work and the communities reached
             through its philanthropic initiatives.
           </p>
         </div>

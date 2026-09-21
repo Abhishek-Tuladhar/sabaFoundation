@@ -29,7 +29,7 @@ export default function ScholarshipCTA() {
             trigger: sectionRef.current,
             start: "top 80%",
           },
-        }
+        },
       );
     }, sectionRef);
 
@@ -61,17 +61,16 @@ export default function ScholarshipCTA() {
           className="mt-12 flex flex-col justify-between gap-8 border-t border-white/10 pt-7 md:flex-row md:items-end"
         >
           <p className="max-w-xl text-base leading-7 text-cream/45 md:text-lg">
-            The scholarship program is currently closed. Stay connected with
-            the foundation for future opportunities and explore ways to support
-            its wider education initiatives.
+            The scholarship program is currently closed. Stay connected with the
+            foundation for future opportunities and explore ways to support its
+            wider education initiatives.
           </p>
 
           <Link
             href="/contact"
             className="group inline-flex w-fit items-center gap-4 border border-gold bg-gold px-6 py-4 text-[10px] font-medium uppercase tracking-[0.18em] text-black transition-all duration-500 hover:bg-[#E2C14A]"
           >
-            Let's Connect
-
+            Let&apos;s Connect
             <span className="flex h-6 w-6 items-center justify-center border border-black/20">
               <ArrowUpRight
                 size={13}

@@ -73,7 +73,7 @@ export default function ScholarshipHero() {
           className="
             absolute
             inset-0
-            bg-[url('/Images/scholarship-hero.jpg')]
+            bg-black
             bg-cover
             bg-center
             bg-no-repeat

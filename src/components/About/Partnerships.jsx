@@ -284,25 +284,27 @@ export default function Partnerships() {
       // -----------------------------------------------------
       // Partner cards animation
       // -----------------------------------------------------
-      gsap.fromTo(
-        gridRef.current.children,
-        {
-          y: 35,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          stagger: 0.06,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: gridRef.current,
-            start: "top 80%",
-            once: true,
+      if (gridRef.current) {
+        gsap.fromTo(
+          gridRef.current.children,
+          {
+            y: 35,
+            opacity: 0,
           },
-        },
-      );
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.8,
+            stagger: 0.06,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: gridRef.current,
+              start: "top 80%",
+              once: true,
+            },
+          },
+        );
+      }
     }, sectionRef);
 
     return () => ctx.revert();
@@ -428,7 +430,7 @@ export default function Partnerships() {
           "
         >
           {partners.map((partner, index) => {
-            const isLinked = partner.url && partner.url !== "#";
+            const isLinked = Boolean(partner.url && partner.url !== "#");
 
             return (
               <a
@@ -442,7 +444,9 @@ export default function Partnerships() {
                   }
                 }}
                 aria-label={
-                  isLinked ? `Visit ${partner.name}` : `${partner.name} partner`
+                  isLinked
+                    ? `Visit ${partner.name}`
+                    : `${partner.name} partner`
                 }
                 className="
                   group
@@ -450,14 +454,13 @@ export default function Partnerships() {
                   flex
                   min-h-[230px]
                   flex-col
-                  overflow-hidden
                   border-b
                   border-r
                   border-cream/10
                   bg-black
                   p-7
                   text-cream
-                  transition-all
+                  transition-colors
                   duration-500
                   ease-out
 
@@ -467,10 +470,10 @@ export default function Partnerships() {
                   md:p-9
                 "
               >
-                {/* -------------------------------------------------
+                {/* =================================================
                     TOP ROW
-                ------------------------------------------------- */}
-                <div className="flex items-start justify-between">
+                ================================================= */}
+                <div className="relative z-20 flex items-start justify-between">
                   <span
                     className="
                       text-[10px]
@@ -519,48 +522,80 @@ export default function Partnerships() {
                   </span>
                 </div>
 
-                {/* -------------------------------------------------
-                    LOGO
-                ------------------------------------------------- */}
+                {/* =================================================
+                    LOGO VIEWPORT
+                    Default: logo is on the LEFT.
+                    Hover:  logo moves to CENTER and zooms in.
+                    No overflow-hidden anywhere → nothing is clipped.
+                ================================================= */}
                 <div
                   className="
+                    relative
+                    z-10
                     mt-7
                     flex
-                    h-16
+                    h-24
                     w-full
-                    max-w-[220px]
                     items-center
+                    justify-start
+
+                    transition-[justify-content]
+                    duration-700
+                    ease-[cubic-bezier(0.22,1,0.36,1)]
+
+                    group-hover:justify-center
                   "
                 >
-                  {partner.logo ? (
-                    <img
-                      src={partner.logo}
-                      alt={`${partner.name} logo`}
-                      className="
-                        max-h-16
-                        max-w-full
-                        object-contain
-                        object-left
-                        opacity-70
-                        grayscale
+                  <div
+                    className="
+                      flex
+                      h-full
+                      items-center
+                      justify-center
+                      origin-left
 
-                        transition-all
-                        duration-500
-                        ease-out
+                      transition-transform
+                      duration-700
+                      ease-[cubic-bezier(0.22,1,0.36,1)]
+                      will-change-transform
 
-                        group-hover:opacity-100
-                        group-hover:grayscale-0
-                      "
-                    />
-                  ) : (
-                    <PartnerFallback type={partner.fallback} />
-                  )}
+                      group-hover:scale-150
+                    "
+                  >
+                    {partner.logo ? (
+                      <img
+                        src={partner.logo}
+                        alt={`${partner.name} logo`}
+                        className="
+                          block
+                          h-20
+                          max-h-20
+                          w-auto
+                          max-w-[160px]
+                          object-contain
+                          object-center
+                          opacity-75
+                          grayscale
+                          select-none
+
+                          transition-all
+                          duration-700
+                          ease-[cubic-bezier(0.22,1,0.36,1)]
+
+                          group-hover:opacity-100
+                          group-hover:grayscale-0
+                        "
+                      />
+                    ) : (
+                      <PartnerFallback type={partner.fallback} />
+                    )}
+                  </div>
                 </div>
 
-                {/* -------------------------------------------------
+                {/* =================================================
                     PARTNER NAME
-                ------------------------------------------------- */}
-                <div className="mt-auto pt-6">
+                ================================================= */}
+                <div className="relative z-20 mt-auto pt-6">
                   <h3
                     className="
                       max-w-sm
@@ -581,15 +616,16 @@ export default function Partnerships() {
                   </h3>
                 </div>
 
-                {/* -------------------------------------------------
+                {/* =================================================
                     HOVER ACCENT
-                ------------------------------------------------- */}
+                ================================================= */}
                 <span
                   className="
                     pointer-events-none
                     absolute
                     bottom-0
                     left-0
+                    z-30
                     h-[2px]
                     w-0
                     bg-black/20

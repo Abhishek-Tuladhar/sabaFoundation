@@ -85,15 +85,9 @@ export default function Header() {
       h-12
       items-center
       rounded-lg
-      bg-white/90
       px-2
-      shadow-[0_4px_24px_rgba(0,0,0,0.25)]
-      ring-1
-      ring-white/20
-      backdrop-blur-sm
       transition-all
       duration-500
-      group-hover:bg-white
       sm:h-14
       sm:px-2.5
       md:h-14

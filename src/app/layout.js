@@ -62,22 +62,13 @@ export const metadata = {
     title: "Saba Family Foundation",
     description:
       "Creating opportunities and improving lives through education, healthcare, livelihoods, arts and culture, and human rights.",
-    images: [
-      {
-        url: "/Images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Saba Family Foundation",
-      },
-    ],
   },
 
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Saba Family Foundation",
     description:
       "Creating opportunities and improving lives through education, healthcare, livelihoods, arts and culture, and human rights.",
-    images: ["/Images/og-image.jpg"],
   },
 
   robots: {

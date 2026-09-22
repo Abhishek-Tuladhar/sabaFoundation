@@ -13,32 +13,32 @@ const partners = [
   // =========================================================
   {
     name: "Delhi Sikh Gurdwara Management Committee (DSGMC)",
-    logo: "/images/partners/DSGMC Logo.png",
+    logo: "/Images/partners/DSGMC Logo.png",
     url: "https://www.dsgmc.in/",
   },
   {
     name: "European Antibullying Network (EAN)",
-    logo: "/images/partners/AntiBullyingLogo.png",
+    logo: "/Images/partners/AntiBullyingLogo.png",
     url: "https://www.antibullying.eu/",
   },
   {
     name: "Beverly Hills Education Foundation (BHEF)",
-    logo: "/images/partners/BHEF_Logo_New.avif",
+    logo: "/Images/partners/BHEF_Logo_New.avif",
     url: "https://www.bhef.org/",
   },
   {
     name: "Andy Vargas Foundation (AVF)",
-    logo: "/images/partners/Andy Vargas Foundation.png",
+    logo: "/Images/partners/Andy Vargas Foundation.png",
     url: "https://andyvargasfoundation.org/",
   },
   {
     name: "Concern Worldwide",
-    logo: "/images/partners/ConcernWorldwide.png",
+    logo: "/Images/partners/ConcernWorldwide.png",
     url: "https://www.concern.net/",
   },
   {
     name: "Comfy Care12",
-    logo: "/images/partners/ComfyCare.avif",
+    logo: "/Images/partners/ComfyCare.avif",
     url: "https://www.comfycare12.net/",
   },
 
@@ -47,27 +47,27 @@ const partners = [
   // =========================================================
   {
     name: "GOONJ – A Voice, An Effort",
-    logo: "/images/partners/Goonj Logo.png",
+    logo: "/Images/partners/Goonj Logo.png",
     url: "https://goonj.org/",
   },
   {
     name: "Columbia University – Institute for the Study of Human Rights (ISHR)",
-    logo: "/images/partners/ISHRLogo.webp",
+    logo: "/Images/partners/ISHRLogo.webp",
     url: "https://www.humanrightscolumbia.org/",
   },
   {
     name: "Kailash Satyarthi Children's Foundation",
-    logo: "/images/partners/SatyarthiLogo.png",
+    logo: "/Images/partners/SatyarthiLogo.png",
     url: "https://satyarthi.org.in/",
   },
   {
     name: "Latin American Association",
-    logo: "/images/partners/logolaa.png",
+    logo: "/Images/partners/logolaa.png",
     url: "https://thelaa.org/",
   },
   {
     name: "Labor Community Services – Los Angeles",
-    logo: "/images/partners/LCSLogo.webp",
+    logo: "/Images/partners/LCSLogo.webp",
     url: "https://launionaflcio.org/labor-community-services/",
   },
   {
@@ -82,7 +82,7 @@ const partners = [
   // =========================================================
   {
     name: "Save the Children",
-    logo: "/images/partners/SavetheChildren.png",
+    logo: "/Images/partners/SavetheChildren.png",
     url: "https://www.savethechildren.net/",
   },
   {
@@ -93,22 +93,22 @@ const partners = [
   },
   {
     name: "International Brotherhood of Teamsters",
-    logo: "/images/partners/International Brotherhood of Teamsters.png",
+    logo: "/Images/partners/International Brotherhood of Teamsters.png",
     url: "https://teamster.org/",
   },
   {
     name: "Teams to End Poverty – UNDP",
-    logo: "/images/partners/UNDP.webp",
+    logo: "/Images/partners/UNDP.webp",
     url: "https://www.undp.org/",
   },
   {
     name: "Gente Unida – A Human Rights Border Coalition",
-    logo: "/images/partners/GenteUnidaLogo.png",
+    logo: "/Images/partners/GenteUnidaLogo.png",
     url: "https://genteunida.org/",
   },
   {
     name: "Say Yes for Children",
-    logo: "/images/partners/SayYesForChildren.png",
+    logo: "/Images/partners/SayYesForChildren.png",
     url: "#",
   },
 
@@ -117,32 +117,32 @@ const partners = [
   // =========================================================
   {
     name: "YUVA",
-    logo: "/images/partners/yuva logo.png",
+    logo: "/Images/partners/yuva logo.png",
     url: "https://yuvaindia.org/",
   },
   {
     name: "Mother Teresa Foundation, Thanjavur",
-    logo: "/images/partners/MotherTeresaLogo.png",
+    logo: "/Images/partners/MotherTeresaLogo.png",
     url: "#",
   },
   {
     name: "The Nabha Foundation",
-    logo: "/images/partners/NabhaFoundation.png",
+    logo: "/Images/partners/NabhaFoundation.png",
     url: "#",
   },
   {
     name: "Mobile Creches – Nurturing Childhood, Sowing Change",
-    logo: "/images/partners/MobileCreches.gif",
+    logo: "/Images/partners/MobileCreches.gif",
     url: "https://www.mobilecreches.org/",
   },
   {
     name: "LAC+USC Medical Center",
-    logo: "/images/partners/Los_Angeles_County+USC_Medical_Center_Healthcare_Network_logo.png",
+    logo: "/Images/partners/Los_Angeles_County+USC_Medical_Center_Healthcare_Network_logo.png",
     url: "https://dhs.lacounty.gov/lacusc/",
   },
   {
     name: "The Kalgidhar Trust",
-    logo: "/images/partners/KalgidharTrust.png",
+    logo: "/Images/partners/KalgidharTrust.png",
     url: "https://www.kalgidhartrust.org/",
   },
 
@@ -151,12 +151,12 @@ const partners = [
   // =========================================================
   {
     name: "George Lopez Foundation",
-    logo: "/images/partners/GoergeLopez.webp",
+    logo: "/Images/partners/GoergeLopez.webp",
     url: "#",
   },
   {
     name: "Hilda L. Solis – Los Angeles County Supervisor, First District",
-    logo: "/images/partners/HILDA.png",
+    logo: "/Images/partners/HILDA.png",
     url: "https://hildalsolis.org/",
   },
   {
@@ -167,17 +167,17 @@ const partners = [
   },
   {
     name: "Robin Hood Army",
-    logo: "/images/partners/RobinHoodArmy.png",
+    logo: "/Images/partners/RobinHoodArmy.png",
     url: "https://robinhoodarmy.com/",
   },
   {
     name: "NetAid",
-    logo: "/images/partners/netaid.png",
+    logo: "/Images/partners/netaid.png",
     url: "#",
   },
   {
     name: "RMHC – Ronald McDonald House Charities",
-    logo: "/images/partners/RMHC.png",
+    logo: "/Images/partners/RMHC.png",
     url: "https://rmhc.org/",
   },
 ];

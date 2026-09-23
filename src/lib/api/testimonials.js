@@ -12,7 +12,5 @@ function mapTestimonial(item) {
 export async function getTestimonials() {
   const data = await apiFetch("/testinomial");
 
-  console.log("Testimonials API response:", data);
-
   return (data?.testinomials ?? []).map(mapTestimonial);
 }

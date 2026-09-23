@@ -469,7 +469,7 @@ export default function Gallery() {
                             {/* Thumbnail */}
                             {video.youtubeId ? (
                               <img
-                                src={`https://img.youtube.com/vi/${video.youtubeId}/maxresdefault.jpg`}
+                                src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
                                 alt=""
                                 className="absolute inset-0 h-full w-full object-cover opacity-70 transition-all duration-1000 group-hover:scale-105 group-hover:opacity-90"
                               />

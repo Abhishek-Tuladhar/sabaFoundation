@@ -352,7 +352,7 @@ export default function CompanyPartners() {
                   ease-out
 
                   hover:z-10
-                  hover:-translate-y-1
+                  hover:-translate-y-4
                   hover:shadow-[0_18px_45px_rgba(0,0,0,0.12)]
 
                   md:p-10
@@ -409,55 +409,64 @@ export default function CompanyPartners() {
                 </div>
 
                 {/* =========================
-                    COMPANY LOGO
-                ========================== */}
+    COMPANY LOGO
+========================== */}
                 <div
                   className="
-                    relative
-                    z-10
-                    flex
-                    h-24
-                    w-full
-                    items-center
-                  "
+    relative
+    z-10
+    flex
+    h-24
+    w-full
+    items-center
+    justify-center
+  "
                 >
                   <div className="relative h-20 w-48">
                     <Image
                       src={company.image}
                       alt={`${company.name} logo`}
                       fill
-                      className="object-contain object-left"
+                      className="
+        object-contain
+        object-center
+        transition-transform
+        duration-500
+        ease-out
+        group-hover:scale-[1.2]
+      "
                       sizes="192px"
                     />
                   </div>
                 </div>
 
                 {/* =========================
-                    COMPANY INFORMATION
-                ========================== */}
-                <div className="relative z-10">
+    COMPANY INFORMATION
+========================== */}
+                <div className="relative z-10 text-center">
                   <div
                     className="
-                      mb-5
-                      h-px
-                      w-8
-                      bg-[#D4AF37]
-                      transition-all
-                      duration-300
-                      group-hover:w-12
-                    "
+      mx-auto
+      mb-5
+      h-px
+      w-8
+      bg-[#D4AF37]
+      transition-all
+      duration-300
+      group-hover:w-12
+    "
                   />
 
-                  <div className="flex items-end justify-between gap-5">
+                  <div className="flex flex-col items-center">
                     <div>
                       <h3
                         className="
-                          text-2xl
-                          font-medium
-                          leading-tight
-                          tracking-[-0.03em]
-                          md:text-3xl
-                        "
+          text-2xl
+          font-medium
+          leading-tight
+          tracking-[-0.03em]
+          md:text-3xl
+        "
                       >
                         {company.name}
                       </h3>
@@ -465,12 +474,12 @@ export default function CompanyPartners() {
                       {company.tagline && (
                         <p
                           className="
-                            mt-3
-                            text-[9px]
-                            uppercase
-                            tracking-[0.2em]
-                            text-black/45
-                          "
+            mt-3
+            text-[9px]
+            uppercase
+            tracking-[0.2em]
+            text-black/45
+          "
                         >
                           {company.tagline}
                         </p>
@@ -481,10 +490,12 @@ export default function CompanyPartners() {
                       size={15}
                       strokeWidth={1.4}
                       className="
-                        mb-1
-                        shrink-0
-                        text-black/30
-                      "
+        mt-4
+        text-black/30
+        transition-transform
+        duration-300
+        group-hover:translate-x-1
+      "
                     />
                   </div>
                 </div>

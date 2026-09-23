@@ -69,7 +69,7 @@ export default function AboutHero() {
       <div className="absolute inset-0">
         <div ref={imageRef} className="absolute inset-0 scale-[1.15]">
           <Image
-            src="/Images/Dr Saba.png"
+            src="https://sabafamilyfoundation.com/storage/slider/1747376060.png"
             alt="Saba Family Foundation"
             fill
             priority

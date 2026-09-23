@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================================================
+   Base
+   ========================================================= */
+
 html.lenis {
   height: auto;
 }
+
+html {
+  background-color: #050505;
+}
+
+body {
+  margin: 0;
+  background-color: #050505;
+  color: #ffffff;
+}
+
+/* =========================================================
+   Lenis Smooth Scroll
+   ========================================================= */
 
 .lenis.lenis-smooth {
   scroll-behavior: auto !important;
@@ -18,21 +36,61 @@ html.lenis {
   overflow: hidden;
 }
 
-body {
-  background-color: #f7f4ef;
-  color: #0d0d0d;
+/* =========================================================
+   Scrollbar
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
 }
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.45);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.7);
+}
+
+/* Firefox */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(212, 175, 55, 0.45) #050505;
+}
+
+/* =========================================================
+   Selection
+   ========================================================= */
+
+::selection {
+  background-color: #d4af37;
+  color: #050505;
+}
+
+/* =========================================================
+   Reveal Animation
+   ========================================================= */
 
 .reveal {
   opacity: 0;
   transform: translateY(40px);
 }
 
-/* Infinite logo marquee */
+/* =========================================================
+   Infinite Logo Marquee
+   ========================================================= */
+
 @keyframes marquee {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
@@ -40,6 +98,14 @@ body {
 
 .animate-marquee {
   animation: marquee 30s linear infinite;
+}
+
+/* =========================================================
+   Area Content
+   ========================================================= */
+
+.area-content {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .area-content p {
@@ -70,4 +136,92 @@ body {
 .area-content strong {
   color: #f3ebdd;
   font-weight: 600;
+}
+
+.area-content a {
+  color: #d4af37;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition:
+    color 300ms ease,
+    opacity 300ms ease;
+}
+
+.area-content a:hover {
+  color: #e8c96a;
+}
+
+/* =========================================================
+   FAQ Content
+   ========================================================= */
+
+.faq-content {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.faq-content p {
+  margin-bottom: 1rem;
+}
+
+.faq-content p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-content strong {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.faq-content a {
+  color: #d4af37;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition:
+    color 300ms ease,
+    opacity 300ms ease;
+}
+
+.faq-content a:hover {
+  color: #e8c96a;
+}
+
+.faq-content h2,
+.faq-content h3 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.faq-content ul,
+.faq-content ol {
+  margin: 1.25rem 0;
+  padding-left: 1.5rem;
+}
+
+.faq-content ul {
+  list-style: disc;
+}
+
+.faq-content ol {
+  list-style: decimal;
+}
+
+.faq-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================================================
+   Gold Utility
+   ========================================================= */
+
+.text-gold {
+  color: #d4af37;
+}
+
+.bg-gold {
+  background-color: #d4af37;
+}
+
+.border-gold {
+  border-color: #d4af37;
 }

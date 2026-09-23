@@ -12,6 +12,7 @@ const navItems = [
   { label: "Areas of Work", href: "/#programs" },
   { label: "Gallery", href: "/#gallery" },
   { label: "Blogs", href: "/blogs" },
+  {label: "FAQ", href: "/faq"},
 ];
 
 export default function Header() {

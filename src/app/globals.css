@@ -105,7 +105,7 @@ body {
    ========================================================= */
 
 .area-content {
-  color: rgba(255, 255, 255, 0.65);
+  color: #403a32;
 }
 
 .area-content p {
@@ -134,12 +134,12 @@ body {
 }
 
 .area-content strong {
-  color: #f3ebdd;
+  color: #2e2a24;
   font-weight: 600;
 }
 
 .area-content a {
-  color: #d4af37;
+  color: #7a5c16;
   text-decoration: underline;
   text-underline-offset: 4px;
   transition:
@@ -148,7 +148,7 @@ body {
 }
 
 .area-content a:hover {
-  color: #e8c96a;
+  color: #b38b2e;
 }
 
 /* =========================================================

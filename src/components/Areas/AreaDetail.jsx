@@ -343,7 +343,6 @@ export default function AreaDetail({ area }) {
               size={15}
               className="transition-transform duration-300 group-hover:-translate-x-1"
             />
-
             All Areas
           </Link>
 
@@ -387,9 +386,7 @@ export default function AreaDetail({ area }) {
                     Area of Work
                   </p>
 
-                  <p className="mt-2 text-sm text-white/90">
-                    {area.title}
-                  </p>
+                  <p className="mt-2 text-sm text-white/90">{area.title}</p>
                 </div>
 
                 <span className="text-4xl font-light text-white/30">
@@ -445,10 +442,7 @@ export default function AreaDetail({ area }) {
               </p>
             )}
 
-            <div
-              ref={scrollHintRef}
-              className="mt-12 flex items-center gap-4"
-            >
+            <div ref={scrollHintRef} className="mt-12 flex items-center gap-4">
               <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#1A1712]/15">
                 <ArrowDown
                   size={16}
@@ -481,8 +475,8 @@ export default function AreaDetail({ area }) {
                   <div className="mt-5 h-px w-12 bg-[#B38B2E]" />
 
                   <p className="mt-5 max-w-[180px] text-xs leading-6 text-[#756852]">
-                    Understanding the foundation&apos;s work and its approach
-                    to creating meaningful change.
+                    Understanding the foundation&apos;s work and its approach to
+                    creating meaningful change.
                   </p>
                 </div>
               </div>
@@ -542,9 +536,7 @@ export default function AreaDetail({ area }) {
               Commitment
             </p>
 
-            <p className="mt-2 text-lg text-[#2E2A24]">
-              Long-term change
-            </p>
+            <p className="mt-2 text-lg text-[#2E2A24]">Long-term change</p>
           </div>
         </div>
       </section>
@@ -613,7 +605,6 @@ export default function AreaDetail({ area }) {
             className="group inline-flex w-fit items-center gap-4 border border-[#1A1712]/20 bg-[#F0E9DA]/40 px-7 py-4 text-xs uppercase tracking-[0.18em] backdrop-blur-sm transition-all duration-500 hover:border-[#B38B2E] hover:bg-[#B38B2E] hover:text-white"
           >
             View all areas
-
             <ArrowUpRight
               size={17}
               className="transition-transform duration-500 group-hover:-translate-y-1 group-hover:translate-x-1"
